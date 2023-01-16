@@ -1,0 +1,41 @@
+.sideBarContainer {
+    height: 100%;
+    border-right: 1px solid black;
+    width: 20%;
+}
+.sideBarContainer-logo {
+    margin-top: 50px;
+}
+.sideBarContainer-logo img {
+    width: 50px;
+}
+
+.sideBar__menu {
+    margin-top: 50px;
+    padding: 0px;
+}
+
+.sideBar__menu-ul {
+    margin: 35px 0px 35px 0px;
+    padding: 0px;
+}
+
+.sideBar__menu-li {
+    list-style-type: none;
+    margin-top: 25px;
+    width: 100%;
+}
+.sideBar__menu-li-img {
+}
+.sideBar__menu-li-img img {
+    width: 10%;
+    padding-right: 20px;
+    padding-bottom: 0px;
+}
+.sideBar__menu-li a {
+    text-decoration: none;
+    color: rgb(86, 86, 86);
+}
+.sideBar__menu-title {
+    color: rgb(86, 86, 86);
+}
