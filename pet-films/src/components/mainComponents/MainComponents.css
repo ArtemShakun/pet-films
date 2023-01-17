@@ -1,0 +1,15 @@
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+.item-1 {
+    background-color: rgb(209, 101, 101);
+}
+.item-2 {
+    background-color: rgb(123, 97, 218);
+}
+.item-3 {
+    background-color: rgb(167, 156, 63);
+}
