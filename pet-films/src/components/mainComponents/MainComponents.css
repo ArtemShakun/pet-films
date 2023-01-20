@@ -1,15 +1,67 @@
+.main-component {
+    width: 50%;
+    margin: 50px;
+}
+.main-component-ul {
+    display: flex;
+    padding-left: 0px;
+}
+.main-component-li {
+    padding-right: 15px;
+}
 .item {
+    background-image: url(../../assets/jumanji.jpg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    border-radius: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
     user-select: none;
+    z-index: 1;
 }
-.item-1 {
-    background-color: rgb(209, 101, 101);
+.item-content {
+    position: absolute;
+    padding-left: 25px;
+    left: 5px;
+    bottom: 25px;
 }
-.item-2 {
-    background-color: rgb(123, 97, 218);
+.item-content-title {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-shadow: 1px 1px 2px black;
 }
-.item-3 {
-    background-color: rgb(167, 156, 63);
+.item-content-subtitle {
+    margin: 0;
+    padding-top: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    text-shadow: 1px 1px 2px black;
+}
+.item-btn {
+    margin-top: 25px;
+    display: flex;
+}
+
+.btn-watch {
+    width: 90px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    background-color: rgb(210, 47, 39);
+    margin-right: 15px;
+    cursor: pointer;
+}
+.btn-add {
+    background-color: rgba(25, 25, 25, 0.7);
+    cursor: pointer;
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    color: white;
 }

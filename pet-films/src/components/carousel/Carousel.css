@@ -1,8 +1,9 @@
 .main-container {
-    height: 150px;
-    width: 450px;
+    height: 310px;
+    width: 650px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 .window {
     height: 100%;
@@ -18,5 +19,21 @@
     transition-timing-function: ease-in-out;
 }
 .arrow {
+    color: white;
     cursor: pointer;
+    background-color: rgba(134, 128, 128, 0.7);
+    border-radius: 25px;
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    position: absolute;
+    z-index: 2;
+}
+
+.arrow-r {
+    right: 5px;
+}
+
+.arrow-l {
+    left: 5px;
 }

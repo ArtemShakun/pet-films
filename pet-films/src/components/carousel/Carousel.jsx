@@ -2,11 +2,12 @@ import { useEffect, useState, Children, cloneElement } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import './Carousel.css';
 
+const PAGE_WIDTH = 650;
+
 export function Carousel({ children }) {
     const [pages, setPages] = useState([]);
     const [offset, setOffset] = useState(0);
-    const PAGE_WIDTH = 450;
-    console.log(offset);
+
     useEffect(() => {
         setPages(
             Children.map(children, (child) => {
@@ -37,7 +38,7 @@ export function Carousel({ children }) {
 
     return (
         <div className="main-container">
-            <FaChevronLeft className="arrow" onClick={handleLeftArrowClick} />
+            <FaChevronLeft className="arrow arrow-l" onClick={handleLeftArrowClick} />
             <div className="window">
                 <div
                     className="all-pages-container"
@@ -45,7 +46,10 @@ export function Carousel({ children }) {
                     {pages}
                 </div>
             </div>
-            <FaChevronRight className="arrow" onClick={handleRightArrowClick} />
+            <FaChevronRight
+                className="arrow arrow-r"
+                onClick={handleRightArrowClick}
+            />
         </div>
     );
 }

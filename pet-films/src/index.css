@@ -16,5 +16,13 @@ code {
     max-width: 1140px;
     margin: 0px auto;
     display: flex;
-    justify-content: space-between;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(86, 86, 86);
 }
